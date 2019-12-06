@@ -1,0 +1,46 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Escape the night{% endblock %}
+
+{% block stylesheets %}
+<script type="text/javascript" src="assets/main/main.js"></script>
+<link rel="stylesheet" href="/assets/main/styleMain.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+{% endblock %}
+
+{% block body %}
+<head>
+    <div> 
+        <a href="https://getbootstrap.com/docs/4.0/getting-started/introduction/"><h1 id="escape"> Escape the night ! </h1></a>
+    </div>
+</head>
+<body id="bdy">
+    <aside>
+        <li>
+            <ul>Test</ul>
+            <ul>Tes 2</ul>
+        </li>
+    </aside>
+    <div id="button-grid">
+        <button type="button" class="btn btn-outline-primary" id="button-start">Start</button>
+    </div>
+    <div id="list">
+        <li >
+            <ul id="buttonm-menu"><button type="button" class="btn btn-outline-light" id="other-button">Option</button></ul>
+            <ul id="buttonm-menu"><button type="button" class="btn btn-outline-light" id="other-button">Exit</button></ul>
+            <ul id="buttonm-menu"><button type="button" class="btn btn-outline-light" id="other-button">Highscores</button></ul>
+            <ul id="buttonm-menu"><button type="button" class="btn btn-outline-light" id="other-button">Profile</button></ul>
+            <ul id="buttonm-menu"><button type="button" class="btn btn-outline-light" id="other-button">Crédits</button></ul>
+            <ul id="buttonm-menu"><button type="button" class="btn btn-outline-light" id="other-button">More...</button></ul>
+        </li>
+    </div>
+    <div>
+        <div class="bloc" id="minutes">
+        </div>
+        <div class="bloc last" id="secondes">
+        </div>
+    </div>
+</body>
+{% endblock %}
